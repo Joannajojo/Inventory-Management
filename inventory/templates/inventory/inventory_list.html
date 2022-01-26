@@ -1,12 +1,15 @@
-<h1>Inventory List</h1>
+<h1 style="margin-left: 2%;margin-right: 2%;">Inventory List</h1>
 
 <ul>
     {% for object in object_list %}
+    <div style="border: 1px solid black;margin-top:2%; padding: 3%;">
 
-    <li>Inventory name: {{ object.name }}</li>
-    <li>Supplier: {{ object.supplier }}</li>
-    <li>Availability: {{ object.availability }}</li>
-    <hr>
+        <li style="list-style-type: none;">Inventory name:<strong> {{ object.name }}</strong> </li>
+        <li style="list-style-type: none;">Supplier: {{ object.supplier }}</li>
+        <li style="list-style-type: none;">Availability: {{ object.availability }}</li>
+    </div>
+
+
     <!-- If object_list is empty  -->
     {% empty %}
     <li>No objects yet.</li>

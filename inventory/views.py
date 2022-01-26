@@ -35,9 +35,11 @@ class InventoryView(APIView):
       #  else:
        #     return Response({"status": "error", "data": serializer.errors}, status=status.HTTP_400_BAD_REQUEST)
 
-    def get(self, request, id=None):
-        if id:
-            item = Inventory.objects.get(id=id)
+    def get(self, request):
+        
+        name = request.GET.get('name')
+        if name:
+            item = Inventory.objects.get(name=name)
             serializer = InventorySerializer(item)
             return Response({"status": "success", "data": serializer.data}, status=status.HTTP_200_OK)
         items = Inventory.objects.all()
