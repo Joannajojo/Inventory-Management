@@ -1,0 +1,14 @@
+<h1>Inventory List</h1>
+
+<ul>
+    {% for object in object_list %}
+
+    <li>Inventory name: {{ object.name }}</li>
+    <li>Supplier: {{ object.supplier }}</li>
+    <li>Availability: {{ object.availability }}</li>
+    <hr>
+    <!-- If object_list is empty  -->
+    {% empty %}
+    <li>No objects yet.</li>
+    {% endfor %}
+</ul>
