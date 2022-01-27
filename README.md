@@ -11,10 +11,10 @@ Ensure Django and Python are installed.
     git clone https://github.com/Joannajojo/Inventory-Management.git 
     ```
   
-2. Create own virtual environment by running the following commands on your prefered terminal in Kiratech folder:
+2. Go into the Inventory-Management folder. Create own virtual environment by running the following commands on your prefered terminal :
     
     ```
-    cd Kiratech
+    cd Inventory-Management
     python -m venv .\venv 
     ```
 
@@ -22,13 +22,14 @@ Ensure Django and Python are installed.
     
     Windows: 
     ```
-    source venv/bin/activate
+    venv\scripts\activate
     ```
     OR
+    
     Linux : 
     ```
     . env/bin/activate
-    venv\scripts\activate
+    
     ```
 
 4. Install requirements using the following commands
@@ -46,4 +47,9 @@ Ensure Django and Python are installed.
    
 # Project Details
 Language: Python, HTML
+
 Database: SQLite3
+
+Framework: Django 4.0.1
+
+
