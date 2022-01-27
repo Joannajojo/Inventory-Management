@@ -19,6 +19,7 @@ Ensure Django and Python are installed.
     ```
 
 3. Activate the virtual environment with:
+    
     Windows: 
     ```
     source venv/bin/activate
@@ -39,6 +40,9 @@ Ensure Django and Python are installed.
    ``` 
    python manage.py runserver
    ```
+6. Navigate to  http://127.0.0.1:8000/inventory on the browser
+7. Visit other related links using the URL.  
+
    
 # Project Details
 Language: Python, HTML
