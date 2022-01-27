@@ -39,3 +39,7 @@ Ensure Django and Python are installed.
    ``` 
    python manage.py runserver
    ```
+   
+# Project Details
+Language: Python, HTML
+Database: SQLite3
